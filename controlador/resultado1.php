@@ -26,6 +26,7 @@
 						else{ 
 							header('Location: ../../index.php? msg2=' .urldecode('LOS DATOS SON INCORRECTOS'));
 						}
+					}
 			?>
 		</main>	
 	</section>
