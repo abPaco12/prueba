@@ -21,7 +21,7 @@
                     <div class="col col-xl-10">
                         <div class="card border-white border border-4" style="border-radius: 1rem;">
                         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  								<div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index3.php">PRODUCTO</a>
@@ -32,6 +32,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="index4.php">PROVEEDOR</a>
                                         </li>
+                                    
                                         <li class="nav-item">
                                             <a class="nav-link" href="index.php">SALIR</a>
                                         </li>
@@ -40,18 +41,18 @@
                         </nav>
                             <div class="row g-0">
                                 <div class="col-md-6 col-lg-6 d-none d-md-block">
-                                    <img src="HD-wallpaper-anakin-dark-side-anakin-skywalker-darth-vader-luke-rey-rise-of-skywalker-skywalker-star-wars-starwars-vader.jpg" alt="login form" class="img-fluid " style="border-radius: 0.7rem 0 0 0.7rem; width: 35rem; height: 32rem;">
+                                    <img src="darth-vader-lightsaber-star-wars_1220x2160_xtrafondos.com.jpg" alt="login form" class="img-fluid " style="border-radius: 0.7rem 0 0 0.7rem; width: 35rem; height: 32rem;">
                                 </div>
                                 <div class="col-md-6 col-lg-6 d-flex align-items-center bg-dark bg-opacity-50">
                                     <div class="card-body text-black">
-                                        <form action="controlador/validarCli.php" method="post" class="row">
+                                        <form action="controlador/validarP.php" method="post" class="row">
                                             <?php
                                             if(isset($_GET['msg'])){
                                                 echo "<center><div class='alert alert-secondary'><span>".$_GET['msg']."</span></div></center>";
                                             } 
                                              ?>
                                             <center> <div class="mb-1">
-                                                <span class="h2 fw-bold text-danger">REGISTRO DE CLIENTE</span>
+                                                <span class="h2 fw-bold text-danger">REGISTRO DE PROVEEDOR</span>
                                              </div></center>
                                              
                                              
@@ -60,20 +61,20 @@
                                                 <label class="form-label text-white">NOMBRE</label>
                                              </div>
                                               <div class="col-md-6 mb-1">
-                                                <input type="text" class="form-control form-control-lg rounded-5 bg-secondary" name="apellido" id="apellido">
-                                                <label class="form-label text-white">APELLIDOS</label>
+                                                <input type="text" class="form-control form-control-lg rounded-5 bg-secondary" name="direccion" id="direccion">
+                                                <label class="form-label text-white">direccion</label>
                                              </div>
                                               <div class="col-md-6 mb-1">
-                                                <input type="text" class="form-control form-control-lg rounded-5 bg-secondary" name="direc" id="direc">
-                                                <label class="form-label text-white">DIRECCION</label>
+                                                <input type="text" class="form-control form-control-lg rounded-5 bg-secondary" name="tele" id="tele">
+                                                <label class="form-label text-white">TELEFONO</label>
                                              </div>
-                                             <div class="col-md-6 mb-1">
-                                                <input type="text" class="form-control form-control-lg rounded-5 bg-secondary" name="cel" id="cel">
-                                                <label class="form-label text-white">CELULAR</label>
-                                             </div>
+                                             <!--<div class="col-md-6 mb-1">
+                                                <input type="text" class="form-control form-control-lg rounded-5 bg-secondary" name="num" id="num">
+                                                <label class="form-label text-white">NUMERO DE EXISTENCIAS</label>
+                                             </div>-->
                                              <center><div class="mb-1">
                                                 <button type="submit" class="btn btn-dark btn-lg btn-block" id="enviar" name="enviar">INICIAR</button> 
-                                                <a href="index2.php" class="btn btn-secondary btn-lg btn-block">LIMPIAR</a>
+                                                <a href="index4.php" class="btn btn-secondary btn-lg btn-block">LIMPIAR</a>
 <!--
                                                 <div class="mt-2"></div>
                                                 <a href="#!" class="small  text-white">¿HAS OLVIDADO TU CONTRASEÑA?</a>
